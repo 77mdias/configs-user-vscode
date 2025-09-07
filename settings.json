@@ -83,7 +83,7 @@
   },
   // Barra lateral e abas
   "workbench.sideBar.location": "left", // "left", "right"
-  "workbench.tree.indent": 10, // Indentação da árvore
+  "workbench.tree.indent": 20, // Indentação da árvore
   "workbench.editor.enablePreview": true, // Pré-visualização ao clicar em arquivos
   "workbench.editor.showTabs": "multiple", // Mostra abas de arquivos
   "workbench.editor.tabCloseButton": "left", // "left", "right"
@@ -91,8 +91,11 @@
   "workbench.editor.enablePreviewFromQuickOpen": true, // Pré-visualização no Quick Open
   "workbench.editor.labelFormat": "short", // "default", "short", "medium", "long"
   "workbench.tree.enableStickyScroll": false, // Barra de título fixa na árvore
+  "workbench.tree.itemHeight": 28, // Altura dos itens na árvore
   "workbench.editor.empty.hint": "hidden", // Esconde dica ao abrir editor vazio
   "workbench.layoutControl.enabled": false, // Desabilita controle de layout
+  "workbench.tree.renderIndentGuides": "always", // Renderiza guias de indentação na árvore
+  "workbench.tree.expandMode": "singleClick", // Expande árvore com um clique
   // TODO ============================
   // TODO 📁 CONFIGURAÇÕES DE ARQUIVOS
   // TODO ============================
