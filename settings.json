@@ -1,0 +1,287 @@
+{
+  // TODO ==========================
+  // TODO 🖥️ CONFIGURAÇÕES DO EDITOR
+  // TODO ==========================
+  // Fonte e tamanho
+  "editor.fontFamily": "Sono",
+  "editor.fontSize": 14,
+  "editor.fontWeight": "normal",
+  "editor.lineHeight": 1.5,
+  "editor.fontLigatures": true, // Habilita ligaduras de fonte (ex.: "ff" → "ﬃ")
+  // Espaçamento e tabulação
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true, // Detecta indentação do arquivo atual
+  "editor.renderWhitespace": "all", // Mostra espaços e tabulações (none, boundary, all)
+  "editor.renderControlCharacters": true, // Mostra caracteres de controle (ex.: \t, \n)
+  // Quebra de linha e minimap
+  "editor.wordWrap": "on", // "on", "off", "wordWrapColumn", "bounded"
+  "editor.wordWrapColumn": 120,
+  "editor.wrappingIndent": "indent", // "none", "same", "indent", "advanced"
+  "editor.multiCursorLimit": 50000, // Limite de cursores múltiplos
+  "editor.lineNumbers": "on", // "on", "off", "relative"
+  "editor.lineNumbersMinChars": 3, // Número mínimo de caracteres para números de linha
+  "editor.minimap.enabled": true, // Ativa o minimap lateral
+  "editor.minimap.size": "fit", // "fit", "proportional"
+  "editor.rulers": [
+    80,
+    120
+  ], // Linhas verticais de referência (80, 120 colunas)
+  // Destaque e sugestões
+  "editor.bracketPairColorization.enabled": true, // Destaque de parênteses
+  "editor.renderLineHighlight": "all", // "none", "gutter", "line", "all"
+  "editor.matchBrackets": "always", // "never", "near", "always"
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  }, // Sugestões rápidas ao digitar
+  "editor.suggest.snippetsPreventQuickSuggestions": true, // Bloqueia sugestões ao usar snippets
+  "editor.suggestOnTriggerCharacters": true, // Ativa sugestões ao digitar caracteres (ex.: ., :)
+  // Formatação automática
+  "editor.formatOnSave": true, // Formata ao salvar
+  "editor.defaultFormatter": "hb432.prettier-eslint-typescript", // Formata com Prettier
+  "editor.formatOnPaste": true, // Formata ao colar
+  "editor.formatOnType": true, // Formata ao digitar
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always" // Executa "Fix All" ao salvar
+  },
+  "editor.accessibilitySupport": "off", // "auto", "off", "on"
+  "editor.semanticHighlighting.enabled": false, // Desabilita realce semântico
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }, // Formata JSON com comentários
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }, // Formata JSON
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }, // Formata JS com TS
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  }, // Personalização de cores (vazia para temas)
+  // TODO =============================
+  // TODO 🎨 CONFIGURAÇÕES DE APARENCIA
+  // TODO =============================
+  // Temas de cor
+  "workbench.colorTheme": "Bearded Theme Arc Blueberry", // Tema principal (ex.: "Default Light+", "Dark+")
+  "workbench.preferredDarkColorTheme": "Bearded Theme HC Wonderland Wood", // Tema escuro preferido
+  "workbench.preferredLightColorTheme": "Default Light+", // Tema claro preferido
+  "workbench.colorCustomizations": {
+    "editorBackground": "#1e1e1e", // Fundo do editor
+    "editorGutter.background": "#1e1e1e", // Fundo do gutter (margem)
+    "editorLineNumber.foreground": "#555555" // Cor dos números de linha
+  },
+  "workbench.productIconTheme": "fluent-icons", // Mostra barra lateral esquerda
+  "workbench.activityBar.iconSize": 16, // Tamanho dos ícones
+  "workbench.activityBar.location": "default", // Esconde barra de atividade
+  "workbench.statusBar.visible": true, // Mostra barra de status
+  "workbench.statusBar.feedback.visible": true, // Mostra feedback na barra de status
+  "workbench.statusBar.itemVisibility": {
+    "git": true, // Mostra status do Git
+    "debug": true // Mostra estado do debug
+  },
+  // Barra lateral e abas
+  "workbench.sideBar.location": "left", // "left", "right"
+  "workbench.tree.indent": 10, // Indentação da árvore
+  "workbench.editor.enablePreview": true, // Pré-visualização ao clicar em arquivos
+  "workbench.editor.showTabs": "multiple", // Mostra abas de arquivos
+  "workbench.editor.tabCloseButton": "left", // "left", "right"
+  "workbench.editor.tabSizing": "fit", // "fit", "shrink"
+  "workbench.editor.enablePreviewFromQuickOpen": true, // Pré-visualização no Quick Open
+  "workbench.editor.labelFormat": "short", // "default", "short", "medium", "long"
+  "workbench.tree.enableStickyScroll": false, // Barra de título fixa na árvore
+  "workbench.editor.empty.hint": "hidden", // Esconde dica ao abrir editor vazio
+  "workbench.layoutControl.enabled": false, // Desabilita controle de layout
+  // TODO ============================
+  // TODO 📁 CONFIGURAÇÕES DE ARQUIVOS
+  // TODO ============================
+  // Auto-save e exclusão
+  "files.autoSave": "onFocusChange", // "off", "onFocusChange", "onWindowChange"
+  "files.exclude": {
+    "**/.git": true, // Oculta .git
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.vscode": true // Oculta pasta .vscode
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true, // Exclui watch do Git
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true
+  },
+  "explorer.confirmDelete": false, // Não pede confirmação ao deletar
+  "explorer.confirmMove": false, // Não pede confirmação ao mover
+  "explorer.autoReveal": true, // Reveal automaticamente o arquivo aberto
+  "explorer.compactFolders": false, // Não compacta pastas com um único filho
+  "explorer.confirmDragAndDrop": false, // Não pede confirmação ao arrastar e soltar
+  "explorer.sortOrder": "foldersNestsFiles", // Ordena pastas primeiro
+  "explorer.fileNesting.enabled": true, // Habilita aninhamento de arquivos
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslint*, eslint.config.*, prettier*, tsconfig*, vite*, pnpm-*, bun.lockb, nest*, package-lock*",
+    "tailwind.config.*": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  }, // Padrões de aninhamento de arquivos
+  "files.associations": {
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "*.css": "postcss",
+    ".dev.vars": "dotenv",
+    "*.ndjson": "jsonl"
+  }, // Associações de arquivos
+  "symbols.files.associations": {
+    "*.module.ts": "nest",
+    "*.guard.ts": "typescript",
+    "*.spec.ts": "ts-test",
+    "*.e2e-spec.ts": "ts-test",
+    "*.mock.ts": "ts-test",
+    "vitest.config.e2e.ts": "vite",
+    ".env.development.local": "gear",
+    ".env.test.local": "gear",
+    ".env.local": "gear",
+    ".env.sst": "gear",
+    ".env.example": "gear",
+    "*.ndjson": "brackets-orange"
+  }, // Ícones personalizados por tipo de arquivo
+  // TODO ========================
+  // TODO 💅 TAILWINDCSS 
+  // TODO ========================
+  "tailwindCSS.experimental.classRegex": [
+    [
+      "tv\\(([^)]*)\\)",
+      "cva\\(([^)]*)\\)",
+      "[\"'`]([^\"'`]*).*?[\"'`]"
+    ],
+    "class:\\s*?[\"'`]([^\"'`]*).*?,",
+    "tw\\('([^']*)'\\)"
+  ],
+  // TODO ============================
+  // TODO 🖥️ CONFIGURAÇÕES DO TERMINAL
+  // TODO ============================
+  "terminal.integrated.fontFamily": "MesloLGL Nerd Font Mono",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontWeightBold": "bold",
+  "terminal.integrated.cursorStyle": "line", // "line", "block", "underline"
+  "terminal.integrated.cursorBlinking": true, // Blinks the cursor
+  "terminal.integrated.tabs.enabled": true, // Habilita abas no terminal
+  "terminal.integrated.tabs.location": "left", // "left", "right"
+  "terminal.integrated.defaultProfile.linux": "zsh (2)", // Define o perfil padrão do terminal
+  "terminal.integrated.defaultProfile.osx": "Terminal",
+  "terminal.integrated.defaultProfile.windows": "PowerShell", // Define o perfil padrão do terminal
+  "terminal.integrated.showExitAlert": false, // Não mostra alerta ao fechar terminal com processo ativo
+  "terminal.integrated.gpuAcceleration": "on", // "off", "on", "auto"
+  // TODO ========================
+  // TODO 🌐 CONFIGURAÇÕES DO GIT
+  // TODO ========================
+  "git.enabled": true, // Habilita suporte a Git
+  "git.autofetch": true, // Busca automaticamente atualizações
+  "git.autocommit": false, // Não commita automaticamente
+  "git.enableSmartCommit": true, // Commit inteligente (ex.: "Fix #123")
+  "git.ignoreLimitWarning": true, // Ignora avisos de limite de arquivos
+  "gitlens.codeLens.authors.enabled": false, // Desabilita autores no CodeLens
+  "git.openRepositoryInParentFolders": "always", // Abre repositórios em pastas pai
+  "gitlens.advanced.messages": {
+    "suppressIntegrationDisconnectedTooManyFailedRequestsWarning": true,
+    "suppressIntegrationRequestTimedOutWarning": true
+  }, // Suprime avisos do GitLens
+  // TODO ========================
+  // TODO CONFIGURAÇÕES DO ESLINT
+  // TODO ========================
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "graphql"
+  ],
+  // TODO ========================
+  // TODO 🛠️ CONFIGURAÇÕES DE DEBBUG
+  // TODO ========================
+  "debug.console.fontSize": 12,
+  "debug.inlineValues": "on", // Mostra valores inline no debug
+  "debug.openDebug": "neverOpen", // "never", "onStart", "onFirstSessionStart"
+  "debug.openExplorerOnSessionStart": true, // Abre o Explorer ao iniciar debug
+  // TODO ========================
+  // TODO 🔍 CONFIGURAÇÕES DE PESQUISA
+  // TODO ========================
+  "search.useRegex": true, // Habilita regex na pesquisa
+  "search.caseSensitive": true, // Sensibilidade a maiúsculas
+  "search.smartCase": true, // Caso a pesquisa tenha maiúsculas, usa case-sensitive
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.git": true
+  },
+  // TODO ========================
+  // TODO 🧩 CONFIGURAÇÕES DE EXTENSÕES
+  // TODO ========================
+  "extensions.ignoreRecommendations": false, // Não ignora recomendações de extensões
+  "extensions.autoCheckUpdates": true, // Verifica atualizações automaticamente
+  //"extensions.showRecommendationsOnlyOnDemand": false, // Mostra recomendações ao clicar
+  // TODO =======================
+  // TODO 🎲 TYPESCRIPT & JS
+  // TODO ========================
+  "typescript.updateImportsOnFileMove.enabled": "always", // Atualiza imports ao mover arquivos
+  "javascript.updateImportsOnFileMove.enabled": "always", // Atualiza imports ao mover arquivos
+  "typescript.suggest.autoImports": true, // Sugestões de auto-import
+  "typescript.preferences.preferTypeOnlyAutoImports": true, // Prefere auto-imports de tipos
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "mdx": "javascriptreact"
+  }, // Habilita Emmet para JS/JSX    
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "mdx": "jsx"
+  }, // Perfil de sintaxe Emmet para JS/JSX
+  // TODO ========================
+  // TODO 🏦 PRISMA
+  // TODO ========================
+  "[prisma]": {
+    "editor.formatOnSave": true // Formata arquivos Prisma ao salvar
+  },
+  // TODO ========================
+  // TODO 🎀 ESTILOS DO VSCODE
+  // TODO ========================
+  // TODO ========================
+  // TODO ⚙️ CONFIGURAÇÕES GERAIS
+  // TODO ========================
+  "workbench.startupEditor": "newUntitledFile", // "newUntitledFile", "welcomePage"
+  "window.zoomLevel": 0, // Nível de zoom (0 = padrão)
+  "window.commandCenter": false, // Desabilita Command Center (Ctrl+P)
+  "workbench.editor.enableSplitHover": true, // Abre em split ao passar o mouse
+  "workbench.editor.focusRecentEditorAfterClose": true, // Foca no editor anterior ao fechar
+  "workbench.editor.restoreViewState": true, // Restaura estado do editor (scroll, abas)
+  "breadcrumbs.enabled": true, // Mostra breadcrumbs (ex.: src/components/Button.tsx)
+  "editor.parameterHints.enabled": true, // Mostra dicas de parâmetros
+  "editor.renderLineHighLight": "gutter", //
+  "editor.suggestSelection": "first", // Seleciona a primeira sugestão automaticamente
+  "gitlens.codeLens.recentChange.enabled": false, // Desabilita CodeLens do GitLens
+  "editor.acceptSuggestionOnCommitCharacter": false, // Não aceita sugestões com caracteres de commit (ex.: . , ;)
+  "security.workspace.trust.untrustedFiles": "newWindow", // Nova janela para arquivos não confiáveis
+  "security.promptForLocalFileProtocolHandling": false, // Não pede confirmação para abrir links locais
+  "update.mode": "start", // "none", "manual", "start", "default"
+  "update.showReleaseNotes": false, // Não mostra notas de lançamento após atualização
+  "cSpell.enableFiletypes": [
+    "!asciidoc",
+    "!c",
+    "!cpp",
+    "!csharp",
+    "!go",
+    "!handlebars",
+    "!haskell",
+    "!jade",
+    "!java",
+    "!latex",
+    "!php",
+    "!pug",
+    "!python",
+    "!restructuredtext",
+    "!rust",
+    "!scala",
+    "!scss"
+  ],
+  "workbench.iconTheme": "vs-nomo-dark",
+  "workbench.editor.tabActionLocation": "left",
+  "bracket-pair-colorizer-2.depreciation-notice": false // Desabilita verificação ortográfica para certas linguagens
+}
